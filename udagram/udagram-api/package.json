@@ -1,7 +1,7 @@
 {
   "name": "udagram-api",
   "version": "2.0.0",
-  "description": "",
+  "description": "Backend API for the Udagram app",
   "engines": {
     "node": "18.17.1"
   },
@@ -14,7 +14,9 @@
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "deploy": "npm run build && eb list && eb use udagram-api-dev && eb deploy",
-    "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
+    "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json",
+    "build3": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
+    "build2": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
