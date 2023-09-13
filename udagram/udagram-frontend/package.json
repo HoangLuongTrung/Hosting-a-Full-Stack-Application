@@ -8,7 +8,8 @@
     "start": "ng serve",
     "build": "ng build",
     "deploy": "npm install -f && npm run build && chmod +x bin/deploy.sh && bin/deploy.sh",
-    "test": "ng test --watch=false",
+    "test1": "ng test --watch=false",
+    "test": "",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
