@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-eb init udagram-api --platform node.js --region us-east-1
+eb init udagram-api --platform "Node.js 18 running on 64bit Amazon Linux 2" --region us-east-1
 
 eb use udagram-api-dev
 
