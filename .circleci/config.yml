@@ -90,12 +90,8 @@ jobs:
 workflows:
   Udagram_Full-Stack:
     jobs:
-      - build: # the job to conditionally run based on the filter by main/master .
-          filters:
-            branches:
-              only: master
+      - build
       - hold:
-          type: approval
           requires:
             - build
       - deploy:
