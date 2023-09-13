@@ -63,11 +63,11 @@ jobs:
       - eb/setup
       - checkout
       - run:
-          name: Deploy App
+          name: Front End test
           # TODO: Install, build, deploy in both apps
           command: |  
             # echo "# TODO: Install, build, deploy frontend & backend (full-stack)"  
-            npm run app:deploy
+            npm run frontend:test
   # deploy step will run only after manual approval
   deploy:
     docker:
