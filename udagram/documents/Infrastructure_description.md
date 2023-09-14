@@ -11,3 +11,4 @@ The application server is hosted on AWS Elastic Beanstalk. Elastic Beanstalk ext
 
 #### S3 Bucket
 AWS S3 Bucket is used to deploy the frontend application. The packaged assets are uploaded to an S3 bucket, which is made publicly accessible.
+Bucket S3: `http://trunghlbucket.s3-website-us-east-1.amazonaws.com/`
